@@ -1,17 +1,23 @@
 .scoreboard {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
-    color: white;
-    padding: 10px 20px;
+    background-color: #fefefe;
+    color: #2d3142;
+    padding: 10px 10px;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 800px;
-    font-size: 1.2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Full width on small screens */
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.scoreboard p {
-    margin: 0;
+/* Stack text vertically on small screens */
+@media (max-width: 480px) {
+    .scoreboard {
+        flex-direction: column;
+        padding: 10px 5px;
+        text-align: center;
+    }
 }

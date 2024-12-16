@@ -1,34 +1,40 @@
 .card {
-    width: 150px;
-    height: 200px;
+    width: 100%; /* Automatically adapts to grid column */
+    max-width: 150px; /* Limit for larger screens */
+    height: auto; /* Adjust height dynamically */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2d3142;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .card img {
-    width: 100%;
+    width: 80%; /* Adjusts image size */
     height: auto;
-    border-bottom: 1px solid #eee;
     border-radius: 10px 10px 0 0;
 }
 
 .card p {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 10px 0 0;
-    color: #333;
+    font-size: 0.8rem; /* Smaller font size */
+    margin: 5px 0;
+    color: #2d3142;
+    text-align: center;
+}
+
+/* Media Query for Very Small Devices */
+@media (max-width: 480px) {
+    .card {
+        max-width: 100px; /* Shrink further for small screens */
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
 }

@@ -1,16 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  font-family: 'Press Start 2P', cursive; /* Retro Nintendo font */
+  background-color: #e63946; /* Nintendo red */
+  color: #ffffff;
+  text-align: center;
 }
 
 .App {
   text-align: center;
   padding: 20px;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
 }

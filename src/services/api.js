@@ -8,8 +8,8 @@ const fetchPokemon = async (count = 10) => {
     const results = await Promise.all(promises);
     return results.map(res => ({
         id: res.data.id,
-        name: res.data.name,
-        image: res.data.sprites.front_default,
+        name: res.data.name.toUpperCase(), // Uppercase for Nintendo style
+        image: res.data.sprites.other['official-artwork'].front_default,
     }));
 };
 
