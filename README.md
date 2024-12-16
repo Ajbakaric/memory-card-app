@@ -30,7 +30,7 @@ Features
 
 ##  Play the Game!
 
-You can try it out here: **[ Memory Card Game on Netlify](#)** ([Add your Netlify link here](https://snazzy-tapioca-218543.netlify.app/))
+You can try it out here: **[ Memory Card Game on Netlify](#)** ([Here](https://snazzy-tapioca-218543.netlify.app/))
 
 ---
 
